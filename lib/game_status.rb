@@ -22,4 +22,9 @@ def won?(board)
   end
 end
 
+def full?(board)
+  board.each do |e|
+    position_taken?(e)
+  end
+end
 
