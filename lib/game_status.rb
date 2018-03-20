@@ -23,8 +23,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |e|
-    position_taken?(e)
+  board.all? do |token|
+    (token == "X" || token == "Y")
   end
 end
 
